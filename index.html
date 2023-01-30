@@ -5,309 +5,345 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" >
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <a class="logo" href="./index.html">
-            <img 
-            src="./images/logo.svg" 
-            
-            alt="Лого сайту">
-        </a>
+    <header class="header">
+<div class="container header-container">
+    
+    <nav class="navigation">
+    <a class="logo" href="./index.html">
+        <img 
+        src="./images/logo.svg" 
         
-        <nav>
-            <ul class="list">
-                <li>
-                    <a href="#about" class="site-nav">Про нас</a>
-                </li>
-                <li>
-                    <a href="#prices" class="site-nav">Послуги та ціни</a>
-                </li>
-                <li>
-                    <a href="#masters" class="site-nav">Майстри</a>
-                </li>
-                <li>
-                    <a href="#contacts" class="site-nav">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="tel:+380441111111" class="site-nav">+38 044 111 11 11</a>
-        <button type="button" class="subscribe-btn">Онлайн запис</button>
+        alt="Лого сайту">
+    </a>
+    
+        <ul class="nav-list list">
+            <li class="nav-list-item">
+                <a href="#about" class="nav-link">Про нас</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#prices" class="nav-link">Послуги та ціни</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#masters" class="nav-link">Майстри</a>
+            </li>
+            <li class="nav-list-item">
+                <a href="#contacts" class="nav-link">Контакти</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <a href="tel:+380441111111" class="nav-link contact-number">+38 044 111 11 11</a>
+    <button type="button" class="modal-btn">Онлайн запис</button>
+</div>
     </header>
+
     <main>
-        <section class="hero">
-            <ul class="list social-links">
-                <li>
-                    <a href="" target="_blank" rel="noopener noreferrer" class="social-link">Youtube</a>
-                </li>
-                <li>
-                    <a href="" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
-                </li>
-            </ul>
-            <p  lang="en" class="hero-description">A hair salon for men in Kyiv</p>
-            <h1  lang="en" class="hero-title">BarberShop</h1>
-            <p class="hero-features">Ми - експерти в модних чоловічих стрижках. <br>
-                Працюємо швидко, обережно та зі смаком. </p>
-        </section>
-        <section id="about">
-            <ul class="list">
-                <li>
-                    <img 
-                    src="./images/img-1.jpg" 
-                    alt="Барбер бриє шию" 
-                    width="270"
-                    height="445">
-                </li>
-                <li>
-                    <img 
-                    src="./images/img-2.jpg" 
-                    alt="Барбер бриє потилицю"
-                    width="270"
-                    height="445">
-                </li>
-            </ul>
-            <p class="about">Про нас</p>
-            <h2 class="about-title">Найкращий Барбершоп твого міста</h2>
-            <p class="about-text">Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас.</p>
-            <p class="about-description">Ми команда, яка ніколи не зупиняється на досягнутому
-                і прагне змін. І коли ти потрапиш до рук нашого майстра,
-                то вже ніколи не зможеш бути таким як раніше. 
-                Ми команда, яка завжди з клієнтами "на одній хвилі". 
-                Тому завжди готові вдосконалити кожного, хто до нас приходить!</p>
-            <button type="button" class="about-btn">Онлайн запис</button>
-        </section>
-        <section id="prices" class="prices">
-            <p class="prices-description">Проведи свій час у компанії найкращих майстрів</p>
-            <h2 class="prices-title">Послуги та ціни</h2>
-            <ul class="list prices-list">
-                <li>
-                    <p>Чоловіча стрижка</p>
-                    <p>від 300 грн.</p>
-                </li>
-                <li>
-                    <p>Стрижка бороди</p>
-                    <p>від 200 грн.</p>
-                </li>
-                <li>
-                    <p>Стрижка вусів</p>
-                    <p>від 200 грн.</p>
-                </li>
-                <li>
-                    <p>Бриття небезпечною бритвою</p>
-                    <p>від 200 грн.</p>
-                </li>
-            </ul>
-            <ul class="list prices-list">
-                <li>
-                    <p>Стрижка у стажера</p>
-                    <p>від 50 грн.</p>
-                </li>
-                <li>
-                    <p>Стрижка під насадку</p>
-                    <p>від 200 грн.</p>
-                </li>
-                <li>
-                    <p>Дитяча стрижка (до 12 років)</p>
-                    <p>від 300 грн.</p>
-                </li>
-                <li>
-                    <p>Камуфлювання сивини</p>
-                    <p>від 200 грн.</p>
-                </li>
-            </ul>
-            <button type="button"  class="subscribe-btn">Онлайн запис</button>
-        </section>
-        <section class="features">
-            <ul class="list features-list">
-                <li>
-                    <span class="features-number">600</span>
-                    <p>Задоволених клієнтів на день</p>
-                </li>
-                <li>
-                    <span class="features-number">50</span>
-                    <p>Нагород за сервіс</p>
-                </li>
-                <li>
-                    <span class="features-number">20</span>
-                    <p>Найкращих масйтрів Києва</p>
-                </li>
-                <li>
-                    <span class="features-number">100</span>
-                    <p>Подарунків постійним клієнтам</p>
-                </li>
-            </ul>
-            <p class="features-text">Стара традиційна школа</p>
-            <h2 class="features-title">Чому приходять саме до нас?</h2>
-            <p class="features-description"> Про нас говорять лише хороше. Але краще 1 раз
-                побачити та відчути, ніж 10 разів прочитати.</p>
-        </section>
-        <section id="masters" class="masters">
-            <p class="masters-text">Для справжніх поціновувачів атмосфери</p>
-            <h2 class="masters-title">Наші майстри</h2>
-            <ul class="list masters-list">
-                <li>
-                    <img 
-                    src="./images/barber-1.jpg" 
-                    alt="Фотографія майстра"
-                    width="370"
-                    height="346">
-                    <h3 lang="en">John Smith</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul class="list">
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/instagram.svg" 
-                                alt="Логотип інстаграм"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/twitter.svg" 
-                                alt="Логотип твіттер"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/facebook.svg" 
-                                alt="Логотип фейбук"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/linkedin.svg" 
-                                alt="Логотип лінкедін"></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <img 
-                    src="./images/barber-2.jpg" 
-                    alt="Фотографія майстра"
-                    width="370"
-                    height="346">
-                    <h3 lang="en">Michele Doe</h3>
-                    <p lang="en">Extreme Barber</p>
-                    <ul class="list">
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/instagram.svg" 
-                                alt="Логотип інстаграм"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/twitter.svg" 
-                                alt="Логотип твіттер"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/facebook.svg" 
-                                alt="Логотип фейбук"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/linkedin.svg" 
-                                alt="Логотип лінкедін"></a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <img 
-                    src="./images/barber-3.jpg" 
-                    alt="Фотографія майстра"
-                    width="370"
-                    height="346">
-                    <h3 lang="en">Alan Black</h3>
-                    <p lang="en"> Extreme Barber</p>
-                    <ul class="list">
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/instagram.svg" 
-                                alt="Логотип інстаграм"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/twitter.svg" 
-                                alt="Логотип твіттер"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/facebook.svg" 
-                                alt="Логотип фейбук"></a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img 
-                                src="./images/linkedin.svg" 
-                                alt="Логотип лінкедін"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </section>
-        <section class="gallery">
-            <p class="gallery-text">З латини "барба" означає "борода"</p>
-            <h2 hidden>Галерея</h2>
-            <ul class="list">
-                <li><img 
-                    src="./images/process-1.jpg" 
-                    alt="Майстер стриже чоловіка"
-                    width="270"
-                    height="360"></li>
-                <li><img 
-                    src="./images/process-2.jpg" 
-                    alt="Майстер бриє бороду чоловіку"
-                    width="270"
-                    height="360"></li>
-                <li><img 
-                    src="./images/process-3.jpg" 
-                    alt="Майстер закриває рушником обличчя чоловіку"
-                    width="270"
-                    height="360"></li>
-                <li><img 
-                    src="./images/process-4.jpg" 
-                    alt="Майтер стриже потилицю чоловіка"
-                    width="270"
-                    height="360"></li>
-            </ul>
-        </section>
-        <section class="subscription">
-            <h2 class="subscription-title">Онлайн-запис</h2>
-            <button type="button" class="subscribe-btn">Відправити</button>
-        </section>
-        <section id="contacts" class="contacts">
-            <h2 class="contacts-title">Контакти</h2>
-            <address>
-                <ul class="list contacts-list"> 
-                    <li><a href="https://goo.gl/maps/UCSvxV7QtCv4FKDu5" target="_blank" rel="noopener noreferrer"> 
-                        вул. Васильківська, 7А Київ, 02000 </a></li>
-                    <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>   
-                    <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li> 
+        <section class="hero-section">
+            <div class="container hero-container">
+               <div class="hero-left-side">
+                <ul class="list social-links">
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer" class="social-link">Youtube</a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                    </li>
                 </ul>
-                </address>
-            <b class="work-hours">Години роботи</b> 
-            <p class="hours">Щоденно з 09:00 до 22:00 </p>
+               </div> 
+
+                <div class="hero-right-side"> 
+                <p  lang="en" class="overtitle overtitle-theme-dark">A hair salon for men in Kyiv</p>
+                <h1  lang="en" class="hero-title">BarberShop</h1>
+                <p class="description description-theme-dark ">Ми - експерти в модних чоловічих стрижках. <br>
+                    Працюємо швидко, обережно та зі смаком. </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container about-box">
+                <ul class="list about-photo-list">
+                    <li>
+                        <img 
+                        src="./images/img-1.jpg" 
+                        alt="Барбер бриє шию" 
+                        width="270"
+                        height="445">
+                    </li>
+                    <li>
+                        <img 
+                        src="./images/img-2.jpg" 
+                        alt="Барбер бриє потилицю"
+                        width="270"
+                        height="445">
+                    </li>
+                </ul>
+                <div class="about-text-box">
+                <p class="overtitle overtitle-theme-bright">Про нас</p>
+                <h2 class="title title-theme-bright ">Кращий Барбершоп твого міста</h2>
+                <p class="description about-description">Якщо ти хочеш додати у свій образ більше впевненості – тобі точно до нас.</p>
+                <p class="about-text">Ми команда, яка ніколи не зупиняється на досягнутому
+                    і прагне змін. І коли ти потрапиш до рук нашого майстра,
+                    то вже ніколи не зможеш бути таким як раніше. 
+                    Ми команда, яка завжди з клієнтами "на одній хвилі". 
+                    Тому завжди готові вдосконалити кожного, хто до нас приходить!</p>
+                <button type="button" class="about-btn modal-btn">Онлайн запис</button>
+                </div>
+                
+            </div>     
+        </section>
+
+        <section id="prices" class="prices-section section">
+            <div class="container">
+                <p class="overtitle overtitle-theme-dark">Проведи свій час у компанії найкращих майстрів</p>
+                <h2 class="title title-theme-dark">Послуги та ціни</h2>
+                <div class="prices-table">
+                    <ul class="list prices-list prices-left-side description">
+                    <li>
+                        <p>Чоловіча стрижка - від 300 грн.</p>
+                    </li>
+                    <li>
+                        <p>Стрижка бороди - від 200 грн.</p>
+                    </li>
+                    <li>
+                        <p>Стрижка вусів - від 200 грн.</p>
+                    </li>
+                    <li>
+                        <p>Бриття небезпечною бритвою - від 200 грн.</p>
+                    </li>
+                </ul>
+                <ul class="list prices-list prices-right-side description">
+                    <li>
+                        <p>Стрижка у стажера - від 50 грн.</p>
+                    </li>
+                    <li>
+                        <p>Стрижка під насадку - від 200 грн.</p>
+                    </li>
+                    <li>
+                        <p>Дитяча стрижка (до 12 років) - від 300 грн.</p>
+                    </li>
+                    <li>
+                        <p>Камуфлювання сивини - від 200 грн.</p>
+                    </li>
+                </ul>
+                </div>
+                <button type="button"  class="modal-btn prices-btn">Онлайн запис</button>
+            </div>    
+        </section>
+
+        <section class="features section">
+            <div class="container features-box">
+                <ul class="list features-list">
+                    <li>
+                        <span class="features-number">600</span>
+                        <p class="features-text">Задоволених клієнтів на день</p>
+                    </li>
+                    <li>
+                        <span class="features-number">50</span>
+                        <p class="features-text">Нагород за сервіс</p>
+                    </li>
+                    <li>
+                        <span class="features-number">20</span>
+                        <p class="features-text">Найкращих масйтрів Києва</p>
+                    </li>
+                    <li>
+                        <span class="features-number">100</span>
+                        <p class="features-text">Подарунків постійним клієнтам</p>
+                    </li>
+                </ul>
+                <div class="features-text-box">
+                    <p class="overtitle overtitle-theme-bright">Стара традиційна школа</p>
+                <h2 class="title title-theme-bright ">Чому приходять саме до нас?</h2>
+                <p class="description"> Про нас говорять лише хороше. Але краще 1 раз
+                    побачити та відчути, ніж 10 разів прочитати.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="masters" class="masters section">
+            <div class="container">
+                <p class="overtitle overtitle-theme-bright">Для справжніх поціновувачів атмосфери</p>
+                <h2 class="title title-theme-bright ">Наші майстри</h2>
+                <ul class="list masters-list">
+                    <li>
+                        <img 
+                        src="./images/barber-1.jpg" 
+                        alt="Фотографія майстра"
+                        width="370"
+                        height="346">
+                        <h3 class="master-name" lang="en">John Smith</h3>
+                        <p class="master-type" lang="en">Extreme Barber</p>
+                        <ul class="list social-links-icons">
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/instagram.svg" 
+                                    alt="Логотип інстаграм"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/twitter.svg" 
+                                    alt="Логотип твіттер"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/facebook.svg" 
+                                    alt="Логотип фейбук"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/linkedin.svg" 
+                                    alt="Логотип лінкедін"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img 
+                        src="./images/barber-2.jpg" 
+                        alt="Фотографія майстра"
+                        width="370"
+                        height="346">
+                        <h3 class="master-name" lang="en">Michele Doe</h3>
+                        <p class="master-type" lang="en">Extreme Barber</p>
+                        <ul class="list social-links-icons">
+                               <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/instagram.svg" 
+                                    alt="Логотип інстаграм"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/twitter.svg" 
+                                    alt="Логотип твіттер"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/facebook.svg" 
+                                    alt="Логотип фейбук"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/linkedin.svg" 
+                                    alt="Логотип лінкедін"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img 
+                        src="./images/barber-3.jpg" 
+                        alt="Фотографія майстра"
+                        width="370"
+                        height="346">
+                        <h3 class="master-name" lang="en">Alan Black</h3>
+                        <p class="master-type" lang="en"> Extreme Barber</p>
+                        <ul class="list social-links-icons">
+                              <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/instagram.svg" 
+                                    alt="Логотип інстаграм"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/twitter.svg" 
+                                    alt="Логотип твіттер"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/facebook.svg" 
+                                    alt="Логотип фейбук"></a>
+                            </li>
+                            <li>
+                                <a href="" class="social-link-icon">
+                                    <img 
+                                    src="./images/linkedin.svg" 
+                                    alt="Логотип лінкедін"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>            
+        </section>
+
+        <section class="gallery section">
+            <div class="container">
+                <p class="overtitle overtitle-theme-bright barba">З латини "барба" означає "борода"</p>
+                <h2 class="visually-hidden">Галерея</h2>
+                <ul class="list gallery-list">
+                    <li><img 
+                        src="./images/process-1.jpg" 
+                        alt="Майстер стриже чоловіка"
+                        width="270"
+                        height="360"></li>
+                    <li><img 
+                        src="./images/process-2.jpg" 
+                        alt="Майстер бриє бороду чоловіку"
+                        width="270"
+                        height="360"></li>
+                    <li><img 
+                        src="./images/process-3.jpg" 
+                        alt="Майстер закриває рушником обличчя чоловіку"
+                        width="270"
+                        height="360"></li>
+                    <li><img 
+                        src="./images/process-4.jpg" 
+                        alt="Майтер стриже потилицю чоловіка"
+                        width="270"
+                        height="360"></li>
+                </ul>
+            </div>
+        </section>
+        <section class="subscription section">
+            <div class="container subscription-container">
+                <div class="subscription-form">
+                    <h2 class="title title-theme-dark">Онлайн-запис</h2>
+                    <button type="button" class="modal-btn">Відправити</button>
+                </div>
+
+                <div class="contacts">
+                    <h2 class="title title-theme-dark">Контакти</h2>
+                    <address>
+                        <ul class="list contacts-list"> 
+                            <li class="contacts-list-item"><a href="https://goo.gl/maps/UCSvxV7QtCv4FKDu5" target="_blank" rel="noopener noreferrer" class="address"> 
+                                вул. Васильківська, 7А Київ, 02000 </a></li>
+                            <li class="contacts-list-item"><a href="tel:+380441111111" class="tel">+38 044 111 11 11</a></li>   
+                            <li class="contacts-list-item"><a href="mailto:barbershop@email.com" class="mail">barbershop@email.com</a></li> 
+                        </ul>
+                        </address>
+                    <p class="overtitle hours">Години роботи</p> 
+                    <p class="description description-theme-dark ">Щоденно з 09:00 до 22:00 </p>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <p class="copyright"> &copy; Copyright 2020 </p>
-        <ul class="list">
-            <li>
-                <a href="" target="_blank" rel="noopener noreferrer" class="social-link">Youtube</a>
-            </li>
-            <li>
-                <a href="" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
-            </li>
-            </ul>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright"> &copy; Copyright 2020 </p>
+            <ul class="list footer-links-list">
+                <li>
+                    <a href="" target="_blank" rel="noopener noreferrer" class="social-link footer-link">Youtube</a>
+                </li>
+                <li>
+                    <a href="" target="_blank" rel="noopener noreferrer" class="social-link footer-link">Instagram</a>
+                </li>
+                </ul>
+        </div>
+       
     </footer>
 </body>
 </html>
