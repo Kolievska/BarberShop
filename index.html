@@ -15,10 +15,9 @@
     
     <nav class="navigation">
     <a class="logo" href="./index.html">
-        <img 
-        src="./images/logo.svg" 
-        
-        alt="Лого сайту">
+        <svg class="logo-icon" width="66" height="56">
+            <use href="./images/sprite.svg#icon-logo"></use>
+        </svg>
     </a>
     
         <ul class="nav-list list">
@@ -104,31 +103,39 @@
                 <h2 class="title title-theme-dark">Послуги та ціни</h2>
                 <div class="prices-table">
                     <ul class="list prices-list prices-left-side description">
-                    <li>
-                        <p>Чоловіча стрижка - від 300 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Чоловіча стрижка</p>
+                        <p class="price">від 300 грн.</p>
                     </li>
-                    <li>
-                        <p>Стрижка бороди - від 200 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Стрижка бороди</p>
+                        <p class="price">від 200 грн.</p>
                     </li>
-                    <li>
-                        <p>Стрижка вусів - від 200 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Стрижка вусів</p>
+                        <p class="price">від 200 грн.</p>
                     </li>
-                    <li>
-                        <p>Бриття небезпечною бритвою - від 200 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Бриття небезпечною бритвою</p>
+                        <p class="price">від 200 грн.</p>
                     </li>
                 </ul>
                 <ul class="list prices-list prices-right-side description">
-                    <li>
-                        <p>Стрижка у стажера - від 50 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Стрижка у стажера</p>
+                        <p class="price">від 50 грн.</p>
                     </li>
-                    <li>
-                        <p>Стрижка під насадку - від 200 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Стрижка під насадку</p>
+                        <p>від 200 грн.</p>
                     </li>
-                    <li>
-                        <p>Дитяча стрижка (до 12 років) - від 300 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Дитяча стрижка (до 12 років)</p>
+                        <p>від 300 грн.</p>
                     </li>
-                    <li>
-                        <p>Камуфлювання сивини - від 200 грн.</p>
+                    <li class="prices-list-item">
+                        <p>Камуфлювання сивини</p>
+                        <p>від 200 грн.</p>
                     </li>
                 </ul>
                 </div>
@@ -137,23 +144,23 @@
         </section>
 
         <section class="features section">
-            <div class="container features-box">
+            <div class="container features-container">
                 <ul class="list features-list">
-                    <li>
+                    <li class="features-list-item">
                         <span class="features-number">600</span>
                         <p class="features-text">Задоволених клієнтів на день</p>
                     </li>
-                    <li>
+                    <li class="features-list-item">
                         <span class="features-number">50</span>
                         <p class="features-text">Нагород за сервіс</p>
                     </li>
-                    <li>
+                    <li class="features-list-item">
                         <span class="features-number">20</span>
                         <p class="features-text">Найкращих масйтрів Києва</p>
                     </li>
-                    <li>
+                    <li class="features-list-item">
                         <span class="features-number">100</span>
-                        <p class="features-text">Подарунків постійним клієнтам</p>
+                        <p class="features-text">Подарунків клієнтам</p>
                     </li>
                 </ul>
                 <div class="features-text-box">
@@ -165,7 +172,7 @@
             </div>
         </section>
 
-        <section id="masters" class="masters section">
+        <section id="masters" class="masters-section section">
             <div class="container">
                 <p class="overtitle overtitle-theme-bright">Для справжніх поціновувачів атмосфери</p>
                 <h2 class="title title-theme-bright ">Наші майстри</h2>
@@ -176,34 +183,42 @@
                         alt="Фотографія майстра"
                         width="370"
                         height="346">
-                        <h3 class="master-name" lang="en">John Smith</h3>
-                        <p class="master-type" lang="en">Extreme Barber</p>
-                        <ul class="list social-links-icons">
-                            <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/instagram.svg" 
-                                    alt="Логотип інстаграм"></a>
-                            </li>
-                            <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/twitter.svg" 
-                                    alt="Логотип твіттер"></a>
-                            </li>
-                            <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/facebook.svg" 
-                                    alt="Логотип фейбук"></a>
-                            </li>
-                            <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/linkedin.svg" 
-                                    alt="Логотип лінкедін"></a>
-                            </li>
-                        </ul>
+
+                        <div class="masters-content-box">
+                            <h3 class="master-name" lang="en">John Smith</h3>
+                            <p class="master-type" lang="en">Extreme Barber</p>
+                            <ul class="list masters-social-links">
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                       
                     </li>
                     <li>
                         <img 
@@ -211,34 +226,42 @@
                         alt="Фотографія майстра"
                         width="370"
                         height="346">
-                        <h3 class="master-name" lang="en">Michele Doe</h3>
-                        <p class="master-type" lang="en">Extreme Barber</p>
-                        <ul class="list social-links-icons">
-                               <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/instagram.svg" 
-                                    alt="Логотип інстаграм"></a>
-                            </li>
-                            <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/twitter.svg" 
-                                    alt="Логотип твіттер"></a>
-                            </li>
-                            <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/facebook.svg" 
-                                    alt="Логотип фейбук"></a>
-                            </li>
-                            <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/linkedin.svg" 
-                                    alt="Логотип лінкедін"></a>
-                            </li>
-                        </ul>
+
+                        <div class="masters-content-box">
+                            <h3 class="master-name" lang="en">Michele Doe</h3>
+                            <p class="master-type" lang="en">Extreme Barber</p>
+                            <ul class="list masters-social-links">
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-instagram"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-twitter"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-facebook"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="master-social-link">
+                                       <svg class="social-link-icon" width="20" height="20">
+                                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                                       </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
                     </li>
                     <li>
                         <img 
@@ -246,34 +269,41 @@
                         alt="Фотографія майстра"
                         width="370"
                         height="346">
+
+                        <div class="masters-content-box">
                         <h3 class="master-name" lang="en">Alan Black</h3>
                         <p class="master-type" lang="en"> Extreme Barber</p>
-                        <ul class="list social-links-icons">
-                              <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/instagram.svg" 
-                                    alt="Логотип інстаграм"></a>
+                        <ul class="list masters-social-links">
+                            <li>
+                                <a href="" class="master-social-link">
+                                   <svg class="social-link-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                   </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/twitter.svg" 
-                                    alt="Логотип твіттер"></a>
+                                <a href="" class="master-social-link">
+                                   <svg class="social-link-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                   </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/facebook.svg" 
-                                    alt="Логотип фейбук"></a>
+                                <a href="" class="master-social-link">
+                                   <svg class="social-link-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                   </svg>
+                                </a>
                             </li>
                             <li>
-                                <a href="" class="social-link-icon">
-                                    <img 
-                                    src="./images/linkedin.svg" 
-                                    alt="Логотип лінкедін"></a>
+                                <a href="" class="master-social-link">
+                                   <svg class="social-link-icon" width="20" height="20">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                   </svg>
+                                </a>
                             </li>
                         </ul>
+                    </div>
                     </li>
                 </ul>
             </div>            
@@ -281,7 +311,7 @@
 
         <section class="gallery section">
             <div class="container">
-                <p class="overtitle overtitle-theme-bright barba">З латини "барба" означає "борода"</p>
+                <p class="overtitle overtitle-theme-bright gallery-overtitle">З латини "барба" означає "борода"</p>
                 <h2 class="visually-hidden">Галерея</h2>
                 <ul class="list gallery-list">
                     <li><img 
@@ -307,24 +337,44 @@
                 </ul>
             </div>
         </section>
-        <section class="subscription section">
+
+        <section class="subscription-section section">
             <div class="container subscription-container">
-                <div class="subscription-form">
+                <div class="subscription-box">
                     <h2 class="title title-theme-dark">Онлайн-запис</h2>
                     <button type="button" class="modal-btn">Відправити</button>
                 </div>
 
-                <div class="contacts">
+                <div class="contacts-box">
                     <h2 class="title title-theme-dark">Контакти</h2>
                     <address>
                         <ul class="list contacts-list"> 
-                            <li class="contacts-list-item"><a href="https://goo.gl/maps/UCSvxV7QtCv4FKDu5" target="_blank" rel="noopener noreferrer" class="address"> 
-                                вул. Васильківська, 7А Київ, 02000 </a></li>
-                            <li class="contacts-list-item"><a href="tel:+380441111111" class="tel">+38 044 111 11 11</a></li>   
-                            <li class="contacts-list-item"><a href="mailto:barbershop@email.com" class="mail">barbershop@email.com</a></li> 
+                            <li class="contacts-list-item">
+                                <a href="https://goo.gl/maps/UCSvxV7QtCv4FKDu5" target="_blank" rel="noopener noreferrer" class="address"> 
+                                    <svg class="contacts-icon" width="24" height="24">
+                                        <use href="./images/sprite.svg#icon-map"></use>
+                                    </svg>
+                                вул. Васильківська, 7А Київ, 02000 </a>
+                            </li>
+
+                            <li class="contacts-list-item">
+                                <a href="tel:+380441111111" class="tel">
+                                    <svg class="contacts-icon" width="24" height="24">
+                                        <use href="./images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    +38 044 111 11 11</a>
+                                </li> 
+
+                            <li class="contacts-list-item">
+                                <a href="mailto:barbershop@email.com" class="mail">
+                                    <svg class="contacts-icon" width="24" height="24">
+                                        <use href="./images/sprite.svg#icon-mail"></use>
+                                    </svg>
+                                    barbershop@email.com</a>
+                                </li> 
                         </ul>
                         </address>
-                    <p class="overtitle hours">Години роботи</p> 
+                    <p class="overtitle work-hours">Години роботи</p> 
                     <p class="description description-theme-dark ">Щоденно з 09:00 до 22:00 </p>
                 </div>
             </div>
